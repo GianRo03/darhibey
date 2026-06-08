@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DARHIBEY | El Guardián de la Esperanza y la Sabiduría</title>
+    <meta
+      name="description"
+      content="DARHIBEY, El Guardián de la Esperanza y la Sabiduría. Una identidad legendaria de liderazgo, valentía, protección, nobleza y perseverancia."
+    />
+    <meta name="theme-color" content="#020617" />
+    <meta property="og:title" content="DARHIBEY | El Guardián de la Esperanza y la Sabiduría" />
+    <meta
+      property="og:description"
+      content="Descubre el significado, historia, valores y escudo heráldico oficial de DARHIBEY."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DARHIBEY | El Guardián de la Esperanza y la Sabiduría" />
+    <meta
+      name="twitter:description"
+      content="Una presencia de marca premium, elegante y épica construida para un nombre legendario."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --blue: #0f172a;
+        --gold: #d4af37;
+        --gold-soft: #f5e2a0;
+        --charcoal: #020617;
+        --white: #ffffff;
+        --card: rgba(255, 255, 255, 0.05);
+        --border: rgba(255, 255, 255, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--white);
+        background: radial-gradient(circle at 10% 0%, rgba(212, 175, 55, 0.15), transparent 35%),
+          radial-gradient(circle at 95% 10%, rgba(56, 189, 248, 0.14), transparent 38%),
+          linear-gradient(180deg, #040b1e 0%, #020617 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+      }
+
+      .skip-link:focus {
+        left: 16px;
+        top: 16px;
+        background: var(--gold);
+        color: var(--charcoal);
+        padding: 8px 12px;
+        border-radius: 8px;
+        z-index: 10000;
+      }
+
+      .container {
+        width: min(1120px, 92%);
+        margin: 0 auto;
+      }
+
+      .section {
+        padding: 88px 0;
+      }
+
+      .section-title {
+        font-family: "Cinzel", serif;
+        font-size: clamp(1.9rem, 4vw, 2.6rem);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .section-sub {
+        color: rgba(255, 255, 255, 0.82);
+        max-width: 840px;
+        line-height: 1.75;
+        margin-top: 18px;
+      }
+
+      .glass {
+        background: linear-gradient(165deg, rgba(15, 23, 42, 0.74), rgba(2, 6, 23, 0.62));
+        border: 1px solid rgba(212, 175, 55, 0.22);
+        border-radius: 20px;
+        backdrop-filter: blur(10px) saturate(110%);
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+
+      .shine {
+        position: relative;
+      }
+
+      .shine::after {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: inherit;
+        border: 1px solid transparent;
+        background: linear-gradient(rgba(15, 23, 42, 0.28), rgba(15, 23, 42, 0.2)) padding-box,
+          linear-gradient(120deg, rgba(212, 175, 55, 0.42), rgba(255, 255, 255, 0.14), rgba(212, 175, 55, 0.24)) border-box;
+        box-shadow: 0 0 18px rgba(212, 175, 55, 0.1);
+        pointer-events: none;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .hero {
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+        background-size: 56px 56px;
+        mask-image: radial-gradient(circle at center, black 42%, transparent 85%);
+        pointer-events: none;
+      }
+
+      .orb {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(42px);
+        opacity: 0.45;
+        animation: float 13s ease-in-out infinite;
+      }
+
+      .orb.gold {
+        width: 300px;
+        height: 300px;
+        left: -80px;
+        top: 80px;
+        background: radial-gradient(circle, rgba(212, 175, 55, 0.72), rgba(212, 175, 55, 0));
+      }
+
+      .orb.blue {
+        width: 360px;
+        height: 360px;
+        right: 0;
+        top: 40px;
+        background: radial-gradient(circle, rgba(56, 189, 248, 0.66), rgba(56, 189, 248, 0));
+        animation-delay: 1.8s;
+      }
+
+      .orb.white {
+        width: 310px;
+        height: 310px;
+        left: 50%;
+        bottom: -40px;
+        transform: translateX(-50%);
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+        animation-delay: 3s;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      .hero-logo-wrap {
+        width: 150px;
+        margin: 0 auto 18px;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-family: "Cinzel", serif;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        font-size: clamp(2.3rem, 9vw, 5.3rem);
+        text-wrap: balance;
+      }
+
+      .hero-subtitle {
+        margin: 18px auto 0;
+        max-width: 760px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: clamp(1rem, 2.7vw, 1.6rem);
+      }
+
+      .cta {
+        margin-top: 36px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid rgba(212, 175, 55, 0.72);
+        background: rgba(212, 175, 55, 0.11);
+        color: var(--white);
+        text-decoration: none;
+        padding: 14px 24px;
+        border-radius: 999px;
+        font-weight: 600;
+        transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+      }
+
+      .cta:hover,
+      .cta:focus-visible {
+        transform: translateY(-2px);
+        background: rgba(212, 175, 55, 0.2);
+        box-shadow: 0 0 26px rgba(212, 175, 55, 0.34);
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .card {
+        padding: 24px;
+        line-height: 1.75;
+      }
+
+      #significado .card {
+        background: linear-gradient(160deg, rgba(15, 23, 42, 0.82), rgba(2, 6, 23, 0.68));
+        border-color: rgba(212, 175, 55, 0.36);
+        padding: 30px 28px;
+        line-height: 1.9;
+        color: rgba(255, 255, 255, 0.94);
+        letter-spacing: 0.01em;
+        box-shadow: 0 14px 34px rgba(2, 6, 23, 0.46), 0 0 22px rgba(212, 175, 55, 0.08);
+      }
+
+      .values-grid {
+        margin-top: 26px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .value {
+        padding: 18px;
+        transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+      }
+
+      .value:hover {
+        transform: translateY(-4px);
+        border-color: rgba(212, 175, 55, 0.52);
+        box-shadow: 0 0 24px rgba(212, 175, 55, 0.22);
+      }
+
+      .value h3 {
+        font-family: "Cinzel", serif;
+        color: var(--gold);
+        letter-spacing: 0.05em;
+        margin: 0 0 8px 0;
+      }
+
+      .value p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .shield-panel {
+        margin-top: 30px;
+        padding: 22px;
+      }
+
+      .shield-art {
+        width: min(560px, 100%);
+        margin: 0 auto;
+        display: block;
+      }
+
+      .symbol-grid {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .symbol {
+        padding: 16px;
+      }
+
+      .symbol strong {
+        display: block;
+        font-family: "Cinzel", serif;
+        color: var(--gold);
+        margin-bottom: 6px;
+      }
+
+      .gallery {
+        margin-top: 28px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .gallery-item {
+        padding: 16px;
+      }
+
+      .gallery-item svg {
+        width: 100%;
+        height: 190px;
+      }
+
+      .quote-wrap {
+        text-align: center;
+        padding: 36px 24px;
+      }
+
+      .quote {
+        margin: 0;
+        font-family: "Cinzel", serif;
+        font-size: clamp(1.4rem, 3.6vw, 2.4rem);
+        line-height: 1.5;
+      }
+
+      footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        margin-top: 44px;
+        padding: 34px 0 42px;
+        background: rgba(15, 23, 42, 0.55);
+      }
+
+      .footer-content {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-logo {
+        width: 68px;
+      }
+
+      .footer-brand {
+        margin: 0;
+        font-family: "Cinzel", serif;
+        letter-spacing: 0.14em;
+      }
+
+      .copyright {
+        margin: 4px 0 0;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.92rem;
+      }
+
+      @media (min-width: 700px) {
+        .values-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .gallery {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .symbol-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 960px) {
+        .grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .values-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .gallery {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+          scroll-behavior: auto !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header class="hero" id="hero" aria-label="Sección principal">
+      <div class="orb gold" aria-hidden="true"></div>
+      <div class="orb blue" aria-hidden="true"></div>
+      <div class="orb white" aria-hidden="true"></div>
+
+      <div class="container hero-content reveal">
+        <div class="hero-logo-wrap" aria-hidden="true">
+          <!-- Logo SVG original DARHIBEY -->
+          <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <defs>
+              <linearGradient id="lg1" x1="35" y1="20" x2="315" y2="338" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F5E2A0" />
+                <stop offset="0.55" stop-color="#D4AF37" />
+                <stop offset="1" stop-color="#8D6B1C" />
+              </linearGradient>
+            </defs>
+            <circle cx="180" cy="180" r="168" stroke="url(#lg1)" stroke-opacity="0.42" stroke-width="2" />
+            <path
+              d="M92 62h100c63 0 106 44 106 108 0 64-44 112-108 112H92V62Z"
+              stroke="url(#lg1)"
+              stroke-width="20"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M150 120h48c28 0 46 18 46 43 0 24-18 43-46 43h-48" stroke="url(#lg1)" stroke-width="14" stroke-linecap="round" />
+            <path
+              d="M236 86c-16 15-22 31-19 48 2 14 11 23 27 30-7-16-6-29 2-40 5-8 12-14 22-21-12-2-23 1-32 8Z"
+              fill="url(#lg1)"
+            />
+            <path d="M281 62l6 17h18l-15 11 6 17-15-10-15 10 6-17-15-11h18l6-17Z" fill="url(#lg1)" />
+          </svg>
+        </div>
+
+        <h1 class="hero-title">DARHIBEY</h1>
+        <p class="hero-subtitle">El Guardián de la Esperanza y la Sabiduría</p>
+        <a class="cta" href="#significado">Descubrir Significado <span aria-hidden="true">↘</span></a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section" id="significado" aria-labelledby="title-significado">
+        <div class="container">
+          <h2 class="section-title reveal" id="title-significado">Significado</h2>
+          <div class="glass shine card reveal">
+            Darhibey significa &quot;El Guardián de la Esperanza y la Sabiduría&quot;.
+            <br /><br />
+            Representa a una persona destinada a iluminar caminos, proteger a quienes la rodean y actuar con firmeza incluso en los momentos más difíciles.
+            <br /><br />
+            Darhibey simboliza el equilibrio entre inteligencia y valentía, combinando una mente capaz de encontrar soluciones con un espíritu dispuesto a enfrentar cualquier desafío.
+            <br /><br />
+            Quien lleva este nombre es visto como alguien que inspira confianza, transmite conocimiento y deja una huella positiva en la vida de los demás.
+            <br /><br />
+            Más que un nombre, Darhibey representa un legado de liderazgo, nobleza, perseverancia y fortaleza interior.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="historia" aria-labelledby="title-historia">
+        <div class="container">
+          <h2 class="section-title reveal" id="title-historia">Historia</h2>
+          <div class="grid-2">
+            <article class="glass card reveal">
+              En una era antigua marcada por reinos fracturados, surgió un linaje cuya fuerza no provenía del miedo, sino de la visión. A ese linaje se le llamó
+              Darhibey. Su fundador, estratega y protector, unificó territorios enfrentados bajo un solo principio: preservar la esperanza del pueblo y defender la
+              sabiduría como la mayor forma de poder.
+            </article>
+            <article class="glass card reveal">
+              Con el paso de las generaciones, Darhibey se convirtió en símbolo de liderazgo noble. Su escudo acompañó tratados, victorias y reconstrucciones,
+              recordando que la verdadera grandeza no se impone: se merece. Hoy, Darhibey representa una herencia viva de disciplina, valentía e inspiración para
+              quienes eligen guiar con propósito.
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="valores" aria-labelledby="title-valores">
+        <div class="container">
+          <h2 class="section-title reveal" id="title-valores">Valores</h2>
+          <div class="values-grid">
+            <article class="glass value reveal">
+              <h3>Sabiduría</h3>
+              <p>Discernimiento profundo para transformar información en decisiones trascendentes.</p>
+            </article>
+            <article class="glass value reveal">
+              <h3>Liderazgo</h3>
+              <p>Capacidad de conducir con visión, coherencia y responsabilidad ante cada desafío.</p>
+            </article>
+            <article class="glass value reveal">
+              <h3>Protección</h3>
+              <p>Compromiso inquebrantable de resguardar lo esencial: personas, principios y futuro.</p>
+            </article>
+            <article class="glass value reveal">
+              <h3>Valentía</h3>
+              <p>Coraje para actuar en contextos complejos, manteniendo firme la dirección correcta.</p>
+            </article>
+            <article class="glass value reveal">
+              <h3>Perseverancia</h3>
+              <p>Constancia estratégica para sostener el avance y convertir obstáculos en progreso.</p>
+            </article>
+            <article class="glass value reveal">
+              <h3>Inspiración</h3>
+              <p>Energía que eleva a otros a su mejor versión mediante ejemplo, claridad y propósito.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="escudo" aria-labelledby="title-escudo">
+        <div class="container">
+          <h2 class="section-title reveal" id="title-escudo">Escudo</h2>
+          <div class="glass shine shield-panel reveal">
+            <!-- Escudo heráldico SVG original DARHIBEY -->
+            <svg class="shield-art" viewBox="0 0 680 920" xmlns="http://www.w3.org/2000/svg" fill="none" aria-label="Escudo de Darhibey">
+              <defs>
+                <linearGradient id="sg1" x1="100" y1="20" x2="580" y2="900" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F7E7B2" />
+                  <stop offset="0.55" stop-color="#D4AF37" />
+                  <stop offset="1" stop-color="#8A671B" />
+                </linearGradient>
+                <linearGradient id="sg2" x1="340" y1="100" x2="340" y2="760" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#132246" />
+                  <stop offset="1" stop-color="#040B1E" />
+                </linearGradient>
+              </defs>
+              <path d="M230 78h220l20 44H210l20-44Z" stroke="url(#sg1)" stroke-width="10" />
+              <path d="M240 58h200l16 30H224l16-30Z" fill="url(#sg1)" opacity="0.9" />
+              <circle cx="340" cy="53" r="14" fill="url(#sg1)" />
+              <path
+                d="M130 145c0-13 10-24 24-24h372c13 0 24 11 24 24v227c0 210-95 334-210 420-115-86-210-210-210-420V145Z"
+                fill="url(#sg2)"
+                stroke="url(#sg1)"
+                stroke-width="14"
+              />
+              <path d="M340 228l22 50 54 5-40 36 11 53-47-27-47 27 11-53-40-36 54-5 22-50Z" fill="url(#sg1)" opacity="0.95" />
+              <path d="M340 198V654" stroke="url(#sg1)" stroke-width="12" stroke-linecap="round" />
+              <path d="M318 620h44v28h-44z" fill="url(#sg1)" />
+              <path d="M284 646h112l-56 64-56-64Z" fill="url(#sg1)" />
+              <path d="M309 274h62l10 28h-82l10-28Z" fill="url(#sg1)" />
+              <rect x="250" y="412" width="180" height="110" rx="12" stroke="url(#sg1)" stroke-width="8" />
+              <path d="M340 412v110M250 468h180" stroke="url(#sg1)" stroke-width="5" />
+              <circle cx="340" cy="468" r="6" fill="url(#sg1)" />
+              <path d="M180 380c38-80 82-121 132-125-54 44-74 105-72 183-24-5-44-19-60-40Z" stroke="url(#sg1)" stroke-width="8" stroke-linecap="round" />
+              <path d="M500 380c-38-80-82-121-132-125 54 44 74 105 72 183 24-5 44-19 60-40Z" stroke="url(#sg1)" stroke-width="8" stroke-linecap="round" />
+              <path d="M118 575c39 16 59 42 63 81-26-18-53-28-81-31 7-20 13-35 18-50Z" stroke="url(#sg1)" stroke-width="6" />
+              <path d="M562 575c-39 16-59 42-63 81 26-18 53-28 81-31-7-20-13-35-18-50Z" stroke="url(#sg1)" stroke-width="6" />
+              <path d="M159 642c26 14 44 33 54 56" stroke="url(#sg1)" stroke-width="6" stroke-linecap="round" />
+              <path d="M521 642c-26 14-44 33-54 56" stroke="url(#sg1)" stroke-width="6" stroke-linecap="round" />
+              <text x="340" y="795" text-anchor="middle" fill="#F7E7B2" font-size="33" letter-spacing="4">LUX ET FORTITUDO</text>
+              <text x="340" y="845" text-anchor="middle" fill="#D4AF37" font-size="41" letter-spacing="7">DARHIBEY</text>
+            </svg>
+          </div>
+
+          <div class="symbol-grid">
+            <div class="glass symbol reveal"><strong>Escudo principal</strong>Representa la unidad del legado y la protección de un propósito superior.</div>
+            <div class="glass symbol reveal"><strong>Corona minimalista</strong>Simboliza autoridad legítima, nobleza y visión de largo alcance.</div>
+            <div class="glass symbol reveal"><strong>Espada vertical</strong>Encarna valentía, firmeza moral y determinación frente a la adversidad.</div>
+            <div class="glass symbol reveal"><strong>Libro abierto</strong>Refleja sabiduría activa, aprendizaje continuo e inteligencia estratégica.</div>
+            <div class="glass symbol reveal"><strong>Estrella</strong>Es la guía de la esperanza que orienta cada decisión trascendente.</div>
+            <div class="glass symbol reveal"><strong>Alas y laureles</strong>Las alas expresan libertad; los laureles, honor conquistado con mérito.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="galeria" aria-labelledby="title-galeria">
+        <div class="container">
+          <h2 class="section-title reveal" id="title-galeria">Galería</h2>
+          <div class="gallery">
+            <article class="glass gallery-item reveal" aria-label="Esperanza">
+              <svg viewBox="0 0 420 250" fill="none">
+                <rect x="1" y="1" width="418" height="248" rx="18" stroke="rgba(212,175,55,0.35)" />
+                <path d="M46 195 130 101l78 42 96-92 74 46" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" />
+                <circle cx="46" cy="195" r="6" fill="#D4AF37" />
+                <circle cx="130" cy="101" r="6" fill="#D4AF37" />
+                <circle cx="208" cy="143" r="6" fill="#D4AF37" />
+                <circle cx="304" cy="51" r="6" fill="#D4AF37" />
+                <circle cx="378" cy="97" r="6" fill="#D4AF37" />
+                <path d="M84 47l6 14h14l-11 8 5 14-12-8-12 8 5-14-11-8h14l6-14Z" fill="#F5E2A0" />
+              </svg>
+              <p>Esperanza</p>
+            </article>
+
+            <article class="glass gallery-item reveal" aria-label="Sabiduría">
+              <svg viewBox="0 0 420 250" fill="none">
+                <rect x="1" y="1" width="418" height="248" rx="18" stroke="rgba(212,175,55,0.35)" />
+                <path
+                  d="M210 40c-33 29-47 62-44 97 3 31 21 53 54 70-12-31-6-56 17-78 13-13 31-25 54-37-17-7-33-8-47-3 2-18-4-32-18-44-3 12-8 21-16 28Z"
+                  fill="#D4AF37"
+                />
+                <path d="M94 206h232M130 186h160" stroke="rgba(212,175,55,0.55)" stroke-width="2" />
+              </svg>
+              <p>Sabiduría</p>
+            </article>
+
+            <article class="glass gallery-item reveal" aria-label="Liderazgo">
+              <svg viewBox="0 0 420 250" fill="none">
+                <rect x="1" y="1" width="418" height="248" rx="18" stroke="rgba(212,175,55,0.35)" />
+                <path d="M210 36 250 118h-80l40-82Z" stroke="#D4AF37" stroke-width="3" />
+                <path d="M210 36v164" stroke="#D4AF37" stroke-width="3" />
+                <path d="M108 206c22-28 57-44 102-44 45 0 80 16 102 44" stroke="#D4AF37" stroke-width="3" />
+                <circle cx="210" cy="118" r="12" fill="rgba(212,175,55,0.24)" stroke="#D4AF37" stroke-width="2" />
+              </svg>
+              <p>Liderazgo</p>
+            </article>
+
+            <article class="glass gallery-item reveal" aria-label="Fortaleza">
+              <svg viewBox="0 0 420 250" fill="none">
+                <rect x="1" y="1" width="418" height="248" rx="18" stroke="rgba(212,175,55,0.35)" />
+                <path d="M100 202V96l32-26 32 26v106M196 202V82l32-24 32 24v120M292 202V110l32-20 32 20v92" stroke="#D4AF37" stroke-width="3" />
+                <path d="M84 202h252" stroke="#D4AF37" stroke-width="3" />
+              </svg>
+              <p>Fortaleza</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="frase" aria-labelledby="title-frase">
+        <div class="container">
+          <div class="glass shine quote-wrap reveal">
+            <h2 class="section-title" id="title-frase" style="position: absolute; left: -9999px">Frase legendaria</h2>
+            <blockquote class="quote">
+              &quot;No es el nombre quien crea la grandeza; es la grandeza quien da significado al nombre.&quot;
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Pie de página">
+      <div class="container footer-content reveal">
+        <div class="footer-logo" aria-hidden="true">
+          <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <defs>
+              <linearGradient id="lg2" x1="35" y1="20" x2="315" y2="338" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F5E2A0" />
+                <stop offset="0.55" stop-color="#D4AF37" />
+                <stop offset="1" stop-color="#8D6B1C" />
+              </linearGradient>
+            </defs>
+            <circle cx="180" cy="180" r="168" stroke="url(#lg2)" stroke-opacity="0.42" stroke-width="2" />
+            <path
+              d="M92 62h100c63 0 106 44 106 108 0 64-44 112-108 112H92V62Z"
+              stroke="url(#lg2)"
+              stroke-width="20"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M150 120h48c28 0 46 18 46 43 0 24-18 43-46 43h-48" stroke="url(#lg2)" stroke-width="14" stroke-linecap="round" />
+            <path
+              d="M236 86c-16 15-22 31-19 48 2 14 11 23 27 30-7-16-6-29 2-40 5-8 12-14 22-21-12-2-23 1-32 8Z"
+              fill="url(#lg2)"
+            />
+            <path d="M281 62l6 17h18l-15 11 6 17-15-10-15 10 6-17-15-11h18l6-17Z" fill="url(#lg2)" />
+          </svg>
+        </div>
+        <p class="footer-brand">DARHIBEY</p>
+        <p class="copyright">© <span id="year"></span> DARHIBEY. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+
+        // Año dinámico de copyright.
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+        // Reveal al hacer scroll.
+        var revealNodes = document.querySelectorAll(".reveal");
+        var ioSupported = "IntersectionObserver" in window;
+
+        if (ioSupported) {
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("is-visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.18 }
+          );
+
+          revealNodes.forEach(function (el) {
+            observer.observe(el);
+          });
+        } else {
+          revealNodes.forEach(function (el) {
+            el.classList.add("is-visible");
+          });
+        }
+
+        // Parallax ligero para el hero.
+        var hero = document.getElementById("hero");
+        var ticking = false;
+
+        function onScroll() {
+          if (!hero) return;
+          if (!ticking) {
+            window.requestAnimationFrame(function () {
+              var y = window.scrollY || window.pageYOffset;
+              hero.style.backgroundPosition = "center " + y * 0.08 + "px";
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+      })();
+    </script>
+  </body>
+</html>
