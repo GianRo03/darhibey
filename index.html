@@ -1,383 +1,261 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DARHIBEY 2.0 | El Guardian de la Esperanza y la Sabiduria</title>
-    <meta
-      name="description"
-      content="DARHIBEY 2.0 presenta el significado, la historia, los valores, el escudo y el legado de una identidad basada en sabiduria, esperanza y fortaleza."
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Darhibey 💛</title>
+    <meta name="description" content="Para Darhibey: una maestra que siembra luz, una mujer de fe y una persona que inspira a ser mejor." />
     <link rel="canonical" href="https://darhibey-v2.vercel.app/" />
-    <meta name="theme-color" content="#020617" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="DARHIBEY 2.0" />
-    <meta property="og:description" content="El Guardian de la Esperanza y la Sabiduria." />
+
+    <meta name="theme-color" content="#FFC93C" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Darhibey" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://darhibey-v2.vercel.app/" />
-    <meta property="og:site_name" content="DARHIBEY" />
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:image" content="https://darhibey-v2.vercel.app/assets/images/darhibey-cinematic.jpg" />
-    <meta property="og:image:alt" content="DARHIBEY 2.0, fondo cinematografico oscuro con lluvia y tonos dorados." />
+    <meta property="og:title" content="Para Darhibey 💛" />
+    <meta property="og:description" content="Luz, fe, mango y amarillo: un pequeño homenaje a una gran persona." />
+    <meta property="og:url" content="https://darhibey-v2.vercel.app/" />
+    <meta property="og:image" content="https://darhibey-v2.vercel.app/assets/img/og.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DARHIBEY 2.0" />
-    <meta name="twitter:description" content="El Guardian de la Esperanza y la Sabiduria." />
-    <meta name="twitter:image" content="https://darhibey-v2.vercel.app/assets/images/darhibey-cinematic.jpg" />
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="sitemap" href="sitemap.xml" type="application/xml" />
-    <link rel="preload" href="assets/images/darhibey-cinematic.jpg" as="image" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500;1,9..144,700&family=Nunito:wght@400;600;800&display=swap"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
-    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-    <div class="dynamic-sky" aria-hidden="true"></div>
+    <a class="skip-link" href="#nombre">Saltar al contenido</a>
 
-    <div class="loader" id="loader" aria-label="Cargando DARHIBEY 2.0">
-      <div class="loader-particles" id="loaderParticles" aria-hidden="true"></div>
-      <div class="loader-content">
-        <div class="brand-mark loader-mark" aria-hidden="true">
-          <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" fill="none">
-            <defs>
-              <linearGradient id="logo-loader" x1="35" y1="20" x2="315" y2="338" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#F5E2A0" />
-                <stop offset="0.55" stop-color="#D4AF37" />
-                <stop offset="1" stop-color="#8D6B1C" />
-              </linearGradient>
-            </defs>
-            <circle cx="180" cy="180" r="168" stroke="url(#logo-loader)" stroke-opacity="0.42" stroke-width="2" />
-            <path d="M92 62h100c63 0 106 44 106 108 0 64-44 112-108 112H92V62Z" stroke="url(#logo-loader)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M150 120h48c28 0 46 18 46 43 0 24-18 43-46 43h-48" stroke="url(#logo-loader)" stroke-width="14" stroke-linecap="round" />
-            <path d="M236 86c-16 15-22 31-19 48 2 14 11 23 27 30-7-16-6-29 2-40 5-8 12-14 22-21-12-2-23 1-32 8Z" fill="url(#logo-loader)" />
-            <path d="M281 62l6 17h18l-15 11 6 17-15-10-15 10 6-17-15-11h18l6-17Z" fill="url(#logo-loader)" />
-          </svg>
+    <!-- 1. Portada -->
+    <header class="hero" id="inicio">
+      <div class="hero__sky" aria-hidden="true">
+        <div class="hero__sun">
+          <div class="hero__rays"></div>
         </div>
-        <p>DARHIBEY 2.0</p>
-        <h1>El Guardián de la Esperanza y la Sabiduría</h1>
-        <div class="progress" role="progressbar" aria-label="Progreso de carga">
-          <span></span>
-        </div>
+        <div class="sparkles" id="sparkles"></div>
       </div>
-    </div>
 
-    <header class="site-header" id="siteHeader">
-      <nav class="nav container" aria-label="Navegacion principal">
-        <a class="nav-brand" href="#inicio" aria-label="DARHIBEY inicio">
-          <span>DARHIBEY</span>
-        </a>
-        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="hero__content">
+        <p class="eyebrow">Para una persona muy especial</p>
+        <h1 class="hero__name">Darhibey</h1>
+        <p class="hero__tagline">Esperanza y sabiduría,<br />con nombre propio.</p>
+        <button class="btn btn--primary" id="openGift" type="button">
+          Ábrelo <span aria-hidden="true">💛</span>
         </button>
-        <div class="nav-links" id="navLinks">
-          <a href="#inicio">Inicio</a>
-          <a href="#significado">Significado</a>
-          <a href="#historia">Historia</a>
-          <a href="#valores">Valores</a>
-          <a href="#vision">Visión</a>
-          <a href="#escudo">Escudo</a>
-          <a href="#galeria">Galería</a>
-          <a href="#legado">Legado</a>
-          <a href="#contacto">Contacto</a>
-        </div>
-      </nav>
+        <p class="hero__hint">Sube el volumen un poquito 🎶</p>
+      </div>
+
+      <svg class="hero__hills" viewBox="0 0 390 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 50 C 70 10, 140 10, 200 40 S 330 80, 390 30 L390 90 L0 90 Z" fill="#FFE8A3" />
+        <path d="M0 70 C 90 40, 170 55, 240 65 S 350 60, 390 55 L390 90 L0 90 Z" fill="#FFF8E7" />
+      </svg>
     </header>
 
-    <main id="main-content">
-      <section class="hero" id="inicio" aria-labelledby="heroTitle">
-        <div class="weather-layer rain" id="rainLayer" aria-hidden="true"></div>
-        <div class="weather-layer gold-particles" id="goldParticles" aria-hidden="true"></div>
-        <div class="lightning" id="lightning" aria-hidden="true"></div>
-        <div class="ocean" aria-hidden="true">
-          <span class="wave wave-1"></span>
-          <span class="wave wave-2"></span>
-          <span class="wave wave-3"></span>
-        </div>
-        <div class="container hero-inner">
-          <div class="brand-mark hero-mark reveal" aria-hidden="true">
-            <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" fill="none">
-              <defs>
-                <linearGradient id="logo-hero" x1="35" y1="20" x2="315" y2="338" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#F5E2A0" />
-                  <stop offset="0.55" stop-color="#D4AF37" />
-                  <stop offset="1" stop-color="#8D6B1C" />
-                </linearGradient>
-              </defs>
-              <circle cx="180" cy="180" r="168" stroke="url(#logo-hero)" stroke-opacity="0.42" stroke-width="2" />
-              <path d="M92 62h100c63 0 106 44 106 108 0 64-44 112-108 112H92V62Z" stroke="url(#logo-hero)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M150 120h48c28 0 46 18 46 43 0 24-18 43-46 43h-48" stroke="url(#logo-hero)" stroke-width="14" stroke-linecap="round" />
-              <path d="M236 86c-16 15-22 31-19 48 2 14 11 23 27 30-7-16-6-29 2-40 5-8 12-14 22-21-12-2-23 1-32 8Z" fill="url(#logo-hero)" />
-              <path d="M281 62l6 17h18l-15 11 6 17-15-10-15 10 6-17-15-11h18l6-17Z" fill="url(#logo-hero)" />
-            </svg>
+    <main>
+      <!-- 2. Su nombre -->
+      <section class="section section--name" id="nombre">
+        <p class="eyebrow reveal">Tu nombre</p>
+        <h2 class="section__title reveal">Darhibey significa <em>esperanza</em> y <em>sabiduría</em></h2>
+        <div class="meaning reveal">
+          <div class="meaning__item">
+            <span class="meaning__icon" aria-hidden="true">🌅</span>
+            <h3>Esperanza</h3>
+            <p>Porque donde tú llegas, las cosas se ven un poquito más bonitas. Tienes esa forma de hacer sentir a todos que mañana va a ser mejor.</p>
           </div>
-          <p class="eyebrow reveal">Version cinematografica premium</p>
-          <h1 class="hero-title reveal" id="heroTitle">DARHIBEY</h1>
-          <p class="hero-subtitle reveal">El Guardián de la Esperanza y la Sabiduría</p>
-          <a class="cta reveal" href="#significado">Descubrir legado</a>
+          <div class="meaning__item">
+            <span class="meaning__icon" aria-hidden="true">📖</span>
+            <h3>Sabiduría</h3>
+            <p>Porque sabes escuchar, sabes enseñar y sabes decir la palabra justa en el momento justo. Eso no se aprende en ningún libro.</p>
+          </div>
+        </div>
+        <p class="handwritten reveal">Y la verdad… te queda perfecto.</p>
+      </section>
+
+      <!-- 3. La maestra -->
+      <section class="section section--teacher" id="maestra">
+        <div class="notebook reveal">
+          <div class="notebook__rings" aria-hidden="true"></div>
+          <p class="eyebrow">Maestra de preprimaria</p>
+          <h2 class="section__title">Siembras luz en <em>corazones pequeñitos</em></h2>
+          <p>
+            Enseñar a los más pequeños es de las tareas más grandes que existen. Ahí, entre crayones, canciones y manitas
+            pintadas, tú vas sembrando cosas que se quedan para toda la vida.
+          </p>
+          <ul class="abc" aria-label="Lo que enseñas">
+            <li class="abc__item" style="--c: #FF8A3D"><b>A</b><span>Amor</span></li>
+            <li class="abc__item" style="--c: #3DA5FF"><b>B</b><span>Bondad</span></li>
+            <li class="abc__item" style="--c: #4CC38A"><b>C</b><span>Confianza</span></li>
+          </ul>
+          <p class="handwritten">Esos niños tienen mucha suerte de tenerte. 🖍️</p>
         </div>
       </section>
 
-      <section class="section" id="significado" aria-labelledby="titleSignificado">
-        <div class="container narrow">
-          <p class="section-kicker reveal">Identidad</p>
-          <h2 class="section-title reveal" id="titleSignificado">Significado</h2>
-          <div class="meaning-panel reveal">
-            <p>Darhibey significa "El Guardián de la Esperanza y la Sabiduría".</p>
-            <p>Representa a una persona destinada a iluminar caminos, proteger a quienes la rodean y actuar con firmeza incluso en los momentos más difíciles.</p>
-            <p>Simboliza el equilibrio entre inteligencia y valentía, combinando una mente capaz de encontrar soluciones con un espíritu dispuesto a enfrentar cualquier desafío.</p>
-            <p>Más que un nombre, Darhibey representa un legado de liderazgo, nobleza, perseverancia y fortaleza interior.</p>
-          </div>
+      <!-- 4. Su fe -->
+      <section class="section section--faith" id="fe">
+        <div class="verse reveal">
+          <svg class="verse__light" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <radialGradient id="glow">
+                <stop offset="0" stop-color="#FFF6C9" />
+                <stop offset="1" stop-color="#FFF6C9" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="50" fill="url(#glow)" />
+          </svg>
+          <p class="eyebrow">Una bendición para ti</p>
+          <blockquote>
+            <p>
+              “Jehová te bendiga, y te guarde; Jehová haga resplandecer su rostro sobre ti, y tenga de ti misericordia;
+              Jehová alce sobre ti su rostro, y ponga en ti paz.”
+            </p>
+            <cite>Números 6:24-26 · RVR1960</cite>
+          </blockquote>
+          <p class="verse__note">Tu fe se nota en cómo tratas a los demás. Y eso dice más que mil palabras.</p>
         </div>
       </section>
 
-      <section class="section timeline-section" id="historia" aria-labelledby="titleHistoria">
-        <div class="container">
-          <p class="section-kicker reveal">Origen</p>
-          <h2 class="section-title reveal" id="titleHistoria">Historia</h2>
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <span>01</span>
-              <h3>El linaje despierta</h3>
-              <p>En una era antigua marcada por reinos fracturados, surgió un linaje cuya fuerza no provenía del miedo, sino de la visión.</p>
-            </article>
-            <article class="timeline-item reveal">
-              <span>02</span>
-              <h3>La esperanza se protege</h3>
-              <p>Su fundador unificó territorios enfrentados bajo un principio: preservar la esperanza del pueblo y defender la sabiduría como poder superior.</p>
-            </article>
-            <article class="timeline-item reveal">
-              <span>03</span>
-              <h3>El símbolo permanece</h3>
-              <p>El escudo acompañó tratados, victorias y reconstrucciones, recordando que la verdadera grandeza no se impone: se merece.</p>
-            </article>
-            <article class="timeline-item reveal">
-              <span>04</span>
-              <h3>La herencia vive</h3>
-              <p>Hoy, Darhibey representa disciplina, valentía e inspiración para quienes eligen guiar con propósito.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <!-- 5. Sus favoritos -->
+      <section class="section section--favorites" id="favoritos">
+        <p class="eyebrow reveal">Cosas que te hacen sonreír</p>
+        <h2 class="section__title reveal">Amarillo y <em>mango</em></h2>
 
-      <section class="section" id="valores" aria-labelledby="titleValores">
-        <div class="container">
-          <p class="section-kicker reveal">Principios</p>
-          <h2 class="section-title reveal" id="titleValores">Valores</h2>
-          <div class="values-grid">
-            <article class="value-card reveal"><h3>Sabiduría</h3><p>Discernimiento profundo para transformar información en decisiones trascendentes.</p></article>
-            <article class="value-card reveal"><h3>Liderazgo</h3><p>Capacidad de conducir con visión, coherencia y responsabilidad ante cada desafío.</p></article>
-            <article class="value-card reveal"><h3>Protección</h3><p>Compromiso inquebrantable de resguardar personas, principios y futuro.</p></article>
-            <article class="value-card reveal"><h3>Valentía</h3><p>Coraje para actuar en contextos complejos manteniendo firme la dirección correcta.</p></article>
-            <article class="value-card reveal"><h3>Perseverancia</h3><p>Constancia estratégica para sostener el avance y convertir obstáculos en progreso.</p></article>
-            <article class="value-card reveal"><h3>Inspiración</h3><p>Energía que eleva a otros mediante ejemplo, claridad y propósito.</p></article>
-          </div>
-        </div>
-      </section>
+        <div class="favorites">
+          <article class="fav fav--yellow reveal">
+            <div class="fav__swatch" aria-hidden="true"></div>
+            <h3>El amarillo</h3>
+            <p>El color del sol, de los girasoles y de las mañanas bonitas. Tiene sentido que sea tu favorito: te pareces mucho a él.</p>
+          </article>
 
-      <section class="section vision-section" id="vision" aria-labelledby="titleVision">
-        <div class="container narrow">
-          <div class="vision-panel reveal">
-            <p class="section-kicker">Horizonte</p>
-            <h2 class="section-title" id="titleVision">Visión</h2>
-            <p>Inspirar liderazgo.</p>
-            <p>Preservar conocimiento.</p>
-            <p>Construir un legado capaz de trascender generaciones.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section shield-section" id="escudo" aria-labelledby="titleEscudo">
-        <div class="container">
-          <p class="section-kicker reveal">Emblema</p>
-          <h2 class="section-title reveal" id="titleEscudo">Escudo</h2>
-          <div class="shield-layout">
-            <div class="shield-panel reveal" id="shieldPanel">
-              <svg class="shield-art" viewBox="0 0 680 920" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Escudo de Darhibey">
+          <article class="fav fav--mango reveal">
+            <button class="mango" id="mangoButton" type="button" aria-label="Tocar el mango para celebrar">
+              <svg viewBox="0 0 120 130" aria-hidden="true">
                 <defs>
-                  <linearGradient id="sg1" x1="100" y1="20" x2="580" y2="900" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F7E7B2" />
-                    <stop offset="0.55" stop-color="#D4AF37" />
-                    <stop offset="1" stop-color="#8A671B" />
-                  </linearGradient>
-                  <linearGradient id="sg2" x1="340" y1="100" x2="340" y2="760" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#132246" />
-                    <stop offset="1" stop-color="#040B1E" />
+                  <linearGradient id="mangoSkin" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#FFE14D" />
+                    <stop offset=".55" stop-color="#FFB627" />
+                    <stop offset="1" stop-color="#FF7A2F" />
                   </linearGradient>
                 </defs>
-                <path d="M230 78h220l20 44H210l20-44Z" stroke="url(#sg1)" stroke-width="10" />
-                <path d="M240 58h200l16 30H224l16-30Z" fill="url(#sg1)" opacity="0.9" />
-                <circle cx="340" cy="53" r="14" fill="url(#sg1)" />
-                <path d="M130 145c0-13 10-24 24-24h372c13 0 24 11 24 24v227c0 210-95 334-210 420-115-86-210-210-210-420V145Z" fill="url(#sg2)" stroke="url(#sg1)" stroke-width="14" />
-                <path d="M340 228l22 50 54 5-40 36 11 53-47-27-47 27 11-53-40-36 54-5 22-50Z" fill="url(#sg1)" opacity="0.95" />
-                <path d="M340 198V654" stroke="url(#sg1)" stroke-width="12" stroke-linecap="round" />
-                <path d="M318 620h44v28h-44z" fill="url(#sg1)" />
-                <path d="M284 646h112l-56 64-56-64Z" fill="url(#sg1)" />
-                <path d="M309 274h62l10 28h-82l10-28Z" fill="url(#sg1)" />
-                <rect x="250" y="412" width="180" height="110" rx="12" stroke="url(#sg1)" stroke-width="8" />
-                <path d="M340 412v110M250 468h180" stroke="url(#sg1)" stroke-width="5" />
-                <circle cx="340" cy="468" r="6" fill="url(#sg1)" />
-                <path d="M180 380c38-80 82-121 132-125-54 44-74 105-72 183-24-5-44-19-60-40Z" stroke="url(#sg1)" stroke-width="8" stroke-linecap="round" />
-                <path d="M500 380c-38-80-82-121-132-125 54 44 74 105 72 183 24-5 44-19 60-40Z" stroke="url(#sg1)" stroke-width="8" stroke-linecap="round" />
-                <path d="M118 575c39 16 59 42 63 81-26-18-53-28-81-31 7-20 13-35 18-50Z" stroke="url(#sg1)" stroke-width="6" />
-                <path d="M562 575c-39 16-59 42-63 81 26-18 53-28 81-31-7-20-13-35-18-50Z" stroke="url(#sg1)" stroke-width="6" />
-                <path d="M159 642c26 14 44 33 54 56" stroke="url(#sg1)" stroke-width="6" stroke-linecap="round" />
-                <path d="M521 642c-26 14-44 33-54 56" stroke="url(#sg1)" stroke-width="6" stroke-linecap="round" />
-                <text x="340" y="795" text-anchor="middle" fill="#F7E7B2" font-size="33" letter-spacing="4">LUX ET FORTITUDO</text>
-                <text x="340" y="845" text-anchor="middle" fill="#D4AF37" font-size="41" letter-spacing="7">DARHIBEY</text>
+                <path d="M62 18 C 94 22, 110 54, 102 88 C 96 112, 76 127, 55 123 C 39 120, 32 107, 37 93 C 41 81, 29 73, 25 59 C 20 38, 40 16, 62 18 Z" fill="url(#mangoSkin)" />
+                <ellipse cx="46" cy="44" rx="7" ry="13" fill="#fff" opacity=".4" transform="rotate(30 46 44)" />
+                <path d="M62 19 C 62 12, 64 7, 68 3" stroke="#6B4423" stroke-width="4" stroke-linecap="round" fill="none" />
+                <path d="M66 10 C 80 -2, 104 2, 110 12 C 96 20, 78 20, 66 10 Z" fill="#4CAF50" />
+                <path d="M68 10 C 84 9, 98 10, 108 12" stroke="#2E7D32" stroke-width="1.5" fill="none" />
               </svg>
-            </div>
-            <div class="symbol-grid">
-              <article class="symbol-card reveal"><strong>Escudo principal</strong><span>Unidad del legado y protección de un propósito superior.</span></article>
-              <article class="symbol-card reveal"><strong>Corona</strong><span>Autoridad legítima, nobleza y visión de largo alcance.</span></article>
-              <article class="symbol-card reveal"><strong>Espada</strong><span>Valentía, firmeza moral y determinación ante la adversidad.</span></article>
-              <article class="symbol-card reveal"><strong>Libro</strong><span>Sabiduría activa, aprendizaje continuo e inteligencia estratégica.</span></article>
-              <article class="symbol-card reveal"><strong>Estrella</strong><span>Guía de esperanza para cada decisión trascendente.</span></article>
-              <article class="symbol-card reveal"><strong>Laureles</strong><span>Honor conquistado con mérito, disciplina y propósito.</span></article>
-            </div>
-          </div>
+            </button>
+            <h3>El mango</h3>
+            <p>Dulce, alegre y lleno de sol, como tu forma de ser. <span class="fav__tip">¡Tócalo!</span></p>
+          </article>
         </div>
       </section>
 
-      <section class="section shield-hall-section" id="sala-escudo" aria-labelledby="titleSalaEscudo">
-        <div class="container">
-          <p class="section-kicker reveal">Santuario</p>
-          <h2 class="section-title reveal" id="titleSalaEscudo">Sala del Escudo</h2>
-          <div class="shield-hall-layout">
-            <div class="shield-hall-panel reveal" id="shieldHallPanel">
-              <svg class="shield-art shield-hall-art" viewBox="0 0 680 920" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Escudo de Darhibey ampliado">
-                <defs>
-                  <linearGradient id="hallSg1" x1="100" y1="20" x2="580" y2="900" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F7E7B2" />
-                    <stop offset="0.55" stop-color="#D4AF37" />
-                    <stop offset="1" stop-color="#8A671B" />
-                  </linearGradient>
-                  <linearGradient id="hallSg2" x1="340" y1="100" x2="340" y2="760" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#132246" />
-                    <stop offset="1" stop-color="#040B1E" />
-                  </linearGradient>
-                </defs>
-                <path d="M230 78h220l20 44H210l20-44Z" stroke="url(#hallSg1)" stroke-width="10" />
-                <path d="M240 58h200l16 30H224l16-30Z" fill="url(#hallSg1)" opacity="0.9" />
-                <circle cx="340" cy="53" r="14" fill="url(#hallSg1)" />
-                <path d="M130 145c0-13 10-24 24-24h372c13 0 24 11 24 24v227c0 210-95 334-210 420-115-86-210-210-210-420V145Z" fill="url(#hallSg2)" stroke="url(#hallSg1)" stroke-width="14" />
-                <path d="M340 228l22 50 54 5-40 36 11 53-47-27-47 27 11-53-40-36 54-5 22-50Z" fill="url(#hallSg1)" opacity="0.95" />
-                <path d="M340 198V654" stroke="url(#hallSg1)" stroke-width="12" stroke-linecap="round" />
-                <path d="M318 620h44v28h-44z" fill="url(#hallSg1)" />
-                <path d="M284 646h112l-56 64-56-64Z" fill="url(#hallSg1)" />
-                <path d="M309 274h62l10 28h-82l10-28Z" fill="url(#hallSg1)" />
-                <rect x="250" y="412" width="180" height="110" rx="12" stroke="url(#hallSg1)" stroke-width="8" />
-                <path d="M340 412v110M250 468h180" stroke="url(#hallSg1)" stroke-width="5" />
-                <circle cx="340" cy="468" r="6" fill="url(#hallSg1)" />
-                <path d="M180 380c38-80 82-121 132-125-54 44-74 105-72 183-24-5-44-19-60-40Z" stroke="url(#hallSg1)" stroke-width="8" stroke-linecap="round" />
-                <path d="M500 380c-38-80-82-121-132-125 54 44 74 105 72 183 24-5 44-19 60-40Z" stroke="url(#hallSg1)" stroke-width="8" stroke-linecap="round" />
-                <path d="M118 575c39 16 59 42 63 81-26-18-53-28-81-31 7-20 13-35 18-50Z" stroke="url(#hallSg1)" stroke-width="6" />
-                <path d="M562 575c-39 16-59 42-63 81 26-18 53-28 81-31-7-20-13-35-18-50Z" stroke="url(#hallSg1)" stroke-width="6" />
-                <path d="M159 642c26 14 44 33 54 56" stroke="url(#hallSg1)" stroke-width="6" stroke-linecap="round" />
-                <path d="M521 642c-26 14-44 33-54 56" stroke="url(#hallSg1)" stroke-width="6" stroke-linecap="round" />
-                <text x="340" y="795" text-anchor="middle" fill="#F7E7B2" font-size="33" letter-spacing="4">LUX ET FORTITUDO</text>
-                <text x="340" y="845" text-anchor="middle" fill="#D4AF37" font-size="41" letter-spacing="7">DARHIBEY</text>
-              </svg>
-            </div>
-            <div class="shield-virtues-grid">
-              <article class="shield-virtue-card reveal"><strong>⭐ Esperanza</strong><span>Luz interior que sostiene el camino incluso en los momentos más oscuros.</span></article>
-              <article class="shield-virtue-card reveal"><strong>⚔ Valentía</strong><span>Firmeza para avanzar con honor cuando el desafío exige decisión.</span></article>
-              <article class="shield-virtue-card reveal"><strong>📖 Sabiduría</strong><span>Conocimiento aplicado con prudencia para proteger el futuro.</span></article>
-              <article class="shield-virtue-card reveal"><strong>🛡 Protección</strong><span>Compromiso de resguardar lo valioso con nobleza y disciplina.</span></article>
-              <article class="shield-virtue-card reveal"><strong>👑 Liderazgo</strong><span>Guía serena que inspira ejemplo, propósito y trascendencia.</span></article>
-            </div>
-          </div>
-        </div>
+      <!-- 6. Galería -->
+      <section class="section section--gallery" id="galeria">
+        <p class="eyebrow reveal">Momentos</p>
+        <h2 class="section__title reveal">Tu sonrisa, <em>en fotos</em></h2>
+        <div class="gallery" id="gallery" tabindex="0" aria-label="Galería de fotos, desliza para ver más"></div>
+        <div class="gallery__dots" id="galleryDots" aria-hidden="true"></div>
       </section>
 
-      <section class="section" id="galeria" aria-labelledby="titleGaleria">
-        <div class="container">
-          <p class="section-kicker reveal">Archivo visual</p>
-          <h2 class="section-title reveal" id="titleGaleria">Galería</h2>
-          <div class="gallery-grid">
-            <button class="gallery-item reveal" type="button" data-full="assets/gallery/darhibey-legado.jpg" data-caption="Legado Darhibey">
-              <img src="assets/gallery/darhibey-legado.jpg" alt="Paisaje cinematografico del legado Darhibey" loading="lazy" width="900" height="600" />
-              <span>Legado</span>
+      <!-- 7. Lo que me inspira -->
+      <section class="section section--reasons" id="inspiras">
+        <p class="eyebrow reveal">Lo que me inspira de ti</p>
+        <h2 class="section__title reveal">Toca cada tarjeta <span aria-hidden="true">👆</span></h2>
+
+        <ul class="reasons">
+          <li class="reveal">
+            <button class="card" type="button" aria-pressed="false">
+              <span class="card__face card__front"><span aria-hidden="true">🌻</span>Tu paciencia</span>
+              <span class="card__face card__back">Esa paciencia infinita con los más pequeños es un regalo que pocos tienen.</span>
             </button>
-            <button class="gallery-item reveal" type="button" data-full="assets/gallery/darhibey-esperanza.jpg" data-caption="Esperanza">
-              <img src="assets/gallery/darhibey-esperanza.jpg" alt="Escena visual de esperanza Darhibey" loading="lazy" width="900" height="600" />
-              <span>Esperanza</span>
+          </li>
+          <li class="reveal">
+            <button class="card" type="button" aria-pressed="false">
+              <span class="card__face card__front"><span aria-hidden="true">🙏</span>Tu fe</span>
+              <span class="card__face card__back">No solo la hablas: la vives. Se nota en tu manera de tratar a todos.</span>
             </button>
-            <button class="gallery-item reveal" type="button" data-full="assets/gallery/darhibey-sabiduria.jpg" data-caption="Sabiduría">
-              <img src="assets/gallery/darhibey-sabiduria.jpg" alt="Escena visual de sabiduria Darhibey" loading="lazy" width="900" height="600" />
-              <span>Sabiduría</span>
+          </li>
+          <li class="reveal">
+            <button class="card" type="button" aria-pressed="false">
+              <span class="card__face card__front"><span aria-hidden="true">☀️</span>Tu sonrisa</span>
+              <span class="card__face card__back">Tiene la capacidad de arreglarle el día a cualquiera. Incluido el mío.</span>
             </button>
-            <button class="gallery-item reveal" type="button" data-full="assets/gallery/darhibey-fortaleza.jpg" data-caption="Fortaleza">
-              <img src="assets/gallery/darhibey-fortaleza.jpg" alt="Escena visual de fortaleza Darhibey" loading="lazy" width="900" height="600" />
-              <span>Fortaleza</span>
+          </li>
+          <li class="reveal">
+            <button class="card" type="button" aria-pressed="false">
+              <span class="card__face card__front"><span aria-hidden="true">🖍️</span>Tu vocación</span>
+              <span class="card__face card__back">Enseñas con amor, y eso es lo que los niños nunca olvidan.</span>
             </button>
-          </div>
-        </div>
+          </li>
+          <li class="reveal">
+            <button class="card" type="button" aria-pressed="false">
+              <span class="card__face card__front"><span aria-hidden="true">💛</span>Tu bondad</span>
+              <span class="card__face card__back">Das sin esperar nada a cambio. El mundo necesita más personas así.</span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button class="card" type="button" aria-pressed="false">
+              <span class="card__face card__front"><span aria-hidden="true">✨</span>Tu ejemplo</span>
+              <span class="card__face card__back">Sin proponértelo, me inspiras a ser una mejor persona cada día.</span>
+            </button>
+          </li>
+        </ul>
       </section>
 
-      <section class="section quote-section" id="legado" aria-labelledby="titleLegado">
-        <div class="container narrow">
-          <p class="section-kicker reveal">Frases legendarias</p>
-          <h2 class="section-title reveal" id="titleLegado">Legado</h2>
-          <div class="quote-carousel reveal" aria-live="polite">
-            <blockquote id="quoteText">"No es el nombre quien crea la grandeza."</blockquote>
-          </div>
-        </div>
-      </section>
+      <!-- 8. Carta -->
+      <section class="section section--letter" id="carta">
+        <article class="letter reveal">
+          <p class="letter__greeting">Querida Darhibey:</p>
+          <p>
+            Quería hacerte algo diferente, algo que pudieras abrir cuando quieras y que te recordara lo valiosa que eres.
+          </p>
+          <p>
+            Admiro muchísimo la persona que eres: tu fe, tu dulzura, la paciencia con la que enseñas y la luz que llevas
+            a donde vas. Gracias por ser como eres, porque sin darte cuenta haces que los que estamos cerca queramos ser
+            mejores.
+          </p>
+          <p>
+            No sé qué días buenos o difíciles te tocarán, pero quiero que sepas algo muy sencillo: aquí tienes a alguien
+            que te aprecia de verdad y que se alegra con cada una de tus sonrisas.
+          </p>
+          <p class="letter__promise">Siempre voy a estar para ti. 💛</p>
+          <p class="letter__sign">Con mucho cariño.</p>
+        </article>
 
-      <section class="section legacy-section" id="contacto" aria-labelledby="titleContacto">
-        <div class="container narrow">
-          <div class="legacy-panel reveal">
-            <p class="section-kicker">Continuidad</p>
-            <h2 class="section-title" id="titleContacto">El legado continúa</h2>
-            <div class="legacy-copy">
-              <p>Darhibey no es solamente un nombre.</p>
-              <p>Es una filosofía basada en la sabiduría, la perseverancia y la protección de aquello que tiene verdadero valor.</p>
-              <p>Cada decisión construye un legado.</p>
-              <p>Cada acción deja una huella.</p>
-              <p>Cada generación transmite una historia.</p>
-            </div>
-            <p class="legacy-motto">LUX ET FORTITUDO</p>
-          </div>
-        </div>
+        <button class="btn btn--ghost" id="celebrate" type="button">Un poquito más de sol <span aria-hidden="true">☀️</span></button>
       </section>
     </main>
 
-    <aside class="audio-player" aria-label="Musica ambiental">
-      <button class="audio-toggle" id="audioToggle" type="button" aria-expanded="false" aria-controls="audioOptions" aria-label="Abrir selector de musica">
-        <span>Audio</span>
-      </button>
-      <div class="audio-options" id="audioOptions">
-        <button class="audio-option is-active" type="button" data-audio="silent">Silencio</button>
-        <button class="audio-option" type="button" data-audio="rain">Lluvia</button>
-        <button class="audio-option" type="button" data-audio="epic">Ambiente épico</button>
-      </div>
-      <audio id="rainAudio" preload="none" loop>
-        <source src="assets/audio/rain.mp3" type="audio/mpeg" />
-      </audio>
-    </aside>
-
-    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Imagen de galeria">
-      <button class="lightbox-close" type="button" id="lightboxClose" aria-label="Cerrar galeria">×</button>
-      <img id="lightboxImage" alt="" />
-      <p id="lightboxCaption"></p>
-    </div>
-
     <footer class="footer">
-      <div class="container footer-inner">
-        <p>DARHIBEY</p>
-        <strong>LUX ET FORTITUDO</strong>
-        <span>El Guardián de la Esperanza y la Sabiduría</span>
-        <small>© <span id="year"></span></small>
-        <em>Legacy Never Ends</em>
-      </div>
+      <p>Hecho con cariño para Darhibey <span aria-hidden="true">🥭</span></p>
     </footer>
+
+    <button class="music" id="musicToggle" type="button" aria-pressed="false" aria-label="Reproducir canción" hidden>
+      <span class="music__icon" aria-hidden="true">
+        <i></i><i></i><i></i>
+      </span>
+    </button>
+    <audio id="song" src="assets/audio/cancion.mp3" preload="none" loop playsinline></audio>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+      <img id="lightboxImage" alt="" />
+      <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Cerrar foto">×</button>
+    </dialog>
+
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
 
     <script src="js/main.js" defer></script>
   </body>

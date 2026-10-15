@@ -6,3 +6,5 @@ build/
 temp/
 .vscode/
 _backup/
+# Material original (fotos y canción sin optimizar)
+fotos-originales/
