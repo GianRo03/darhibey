@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://darhibey.netlify.app/sitemap.xml
+Sitemap: https://darhibey-v2.vercel.app/sitemap.xml
