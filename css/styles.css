@@ -504,6 +504,7 @@ em {
 
 .gallery__item img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 12px;
@@ -744,7 +745,9 @@ em {
 }
 
 .lightbox img {
-  max-height: 100%;
+  width: auto;
+  max-height: calc(100vh - 40px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  max-height: calc(100dvh - 40px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   border-radius: 14px;
   object-fit: contain;
 }

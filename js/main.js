@@ -6,10 +6,7 @@
   const PHOTOS = [
     { src: "assets/fotos/maestra.jpg", alt: "Darhibey sonriendo con su uniforme, entre plantas", caption: "Maestra de corazón 🍎" },
     { src: "assets/fotos/pequenita.jpg", alt: "Darhibey de niña, con blusa rosada y las manos en la cintura", caption: "Desde pequeñita, con actitud 💛" },
-    { src: "assets/fotos/sonrisa.jpg", alt: "Darhibey sonriendo en una selfie", caption: "Esa sonrisa ☀️" },
-    { src: "assets/fotos/espejo.jpg", alt: "Darhibey con vestido negro frente a un espejo", caption: "Elegancia natural ✨" },
-    { src: "assets/fotos/estilo.jpg", alt: "Darhibey con lentes de sol y camisa a rayas", caption: "Con todo el estilo 😎" },
-    { src: "assets/fotos/cabello.jpg", alt: "Primer plano de la mirada de Darhibey entre su cabello", caption: "Esa mirada 🌻" }
+    { src: "assets/fotos/estilo.jpg", alt: "Darhibey con lentes de sol y camisa a rayas", caption: "Con todo el estilo 😎" }
   ];
 
   const $ = (selector) => document.querySelector(selector);
